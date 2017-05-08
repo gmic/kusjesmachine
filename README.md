@@ -27,7 +27,9 @@ gulp
 
 # Getting started
 
-Create the user and database in your postgress database:
+Install postgress.
+
+Create the user and database in postgress:
 
     createuser --pwprompt kusjesmachine-dev
     createdb -Okusjesmachine-dev -Eutf8 kusjesmachine-dev
@@ -36,3 +38,6 @@ Create schema's:
 
     ./manage.py migrate
 
+Run the server:
+
+    ./manage.py runserver
